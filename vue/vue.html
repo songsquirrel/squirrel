@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>vue学习</title>
+	<script src="vue.js"></script>
+</head>
+<body>
+	<div id = 'msg'>
+		{{ message }}
+	</div>
+	<!-- vue指令v-bind -->
+	<div id = 'prac1'>
+		<span v-bind:title="message1">
+			鼠标悬停几秒钟查看此处动态绑定的提示信息！
+		</span>
+	</div>
+	<!-- if -->
+	<div id="prac2">
+		<p v-if="seen">if为true</p>
+	</div>
+	<!-- vue for -->
+	<div id = 'prac3'>
+		<ol>
+			<li v-for="ele in eles">
+				{{ele.text}}
+			</li>
+		</ol>
+	</div>
+</body>
+<script>
+	var example = {
+		message : "第一次尝试vue."
+	};
+	// 创建一个Vue实例-- 连接View与Model
+	new Vue({
+		el : '#msg',
+		data : example
+	})
+	// 创建vue
+	var prac = new Vue({
+		el : '#prac1',
+		data : {
+			message1 :　'页面加载于' + new Date().toLocaleString(),
+		}
+	})
+	var prac2 = new Vue({
+		el : '#prac2',
+		data : {
+			seen : false
+		}
+	})
+	debugger
+	var prac3 = new Vue({
+		el : "#prac3",
+		data : {
+			eles : [
+				{text : "第一次"},
+				{text : "第二次"},
+				{text : "第三次"}
+			]
+		}
+	})
+
+	var prac4 = new Vue({
+		el : "#prac4",
+		data : {
+			msg : "1+1="
+		},
+		computed : function (this.msg) {
+			return this.msg += 2;
+		} 
+	})
+
+
+</script>
+</html>
