@@ -29,3 +29,23 @@ net start mysql
 4. 删除本地文件
 5. 重启电脑
 6. 重新安装
+
+## centos7安装mysql
+> 1. 下载yum源
+>```cmd
+>wget https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
+>```
+>> ps: 版本获取网址: [点击](https://dev.mysql.com/downloads/repo/yum)
+> 2. 安装yum源
+>```cmd
+>   yum clean all
+>   yum makeache
+>```
+> 3. 开始安装MYSQL
+>```cmd
+>   yum install mysql-community-server
+>```
+> 4. 查看初始化密码
+>```cmd
+>   cat /var/log/mysqld.log | grep password
+>```
