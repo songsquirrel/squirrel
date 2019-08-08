@@ -1,0 +1,23 @@
+# 电脑D盘目录(主要包括开发环境目录)
+.
+├── develop
+│   ├── apache-maven
+│   ├── apache-tomcat
+│   ├── database
+│   │   ├── mysql
+│   │   └── oracle
+│   ├── eclipse
+│   ├── git
+│   ├── java
+│   ├── neovim
+│   ├── node
+│   ├── python
+│   ├── repo
+│   │   └── mavenRepo -- settings.xml
+│   └── xshell
+├── software
+└── workExp
+    ├── eclipseWorkSpace
+    └── ideaWorkSpace
+        ├── java
+        └── python

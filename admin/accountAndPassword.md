@@ -1,1 +1,1 @@
-mysql: root/xusong; db_study/xusong;
+mysql: mysql/root/xusong;db_study/studyuser/xusong;

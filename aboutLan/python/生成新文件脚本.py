@@ -41,8 +41,22 @@ def getFileName(date, folderPath):
 		if os.path.isfile(os.path.join(folderPath, path)) and path.startswith(date) :
 			i += 1;
 	else : # for循环执行完之后执行
-		print(i);
-		return "%s-practice-%02d"%(date, i);
+		fileNameConfigPath = os.path.join(folderPath, "config", "fileNameConfig")
+		if os.path.isfile(fileNameConfigPath) :
+			fileRW = open(fileNameConfigPath);
+			try:
+				fileNameConfig = fileRW.readlines();
+				print(fileNameConfig);
+				for line in fileNameConfig:
+					print(line);
+					if line.strip().startswith("#") :
+						continue;
+					else :
+						pass
+			finally:
+				fileRW.close();
+
+	return "%s-practice-%02d"%(date, i);
 
 
 
