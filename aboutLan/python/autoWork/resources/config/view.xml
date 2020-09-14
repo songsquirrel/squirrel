@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8">
+<view>
+    <!-- view文件名 -->
+    <fileName>autoPythonView</fileName>
+    
+    <!-- view中需要添加的组件 -->
+    <component>
+        
+        <item>DataGrid</item>
+        <item>SearchBox</item>
+        <item>ToolBar</item>
+        <item></item>
+    </component>
+    <!-- 前台需要展示的字段名 -->
+    <columnName><columnName>
+</view>

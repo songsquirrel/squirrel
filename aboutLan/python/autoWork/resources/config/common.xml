@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8">
+<file>
+    <!-- 场景名 -->
+    <facename>测试自动生成视图</facename>
+    <!-- 场景ID -->
+    <faceId>python</faceId>
+    <!-- 场景描述 -->
+    <description>利用python自动化生成weblet场景</description>
+</file>
+
